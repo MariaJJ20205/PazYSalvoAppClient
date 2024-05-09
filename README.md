@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Instalar Angular
+
+1. `ng new NombreDelProyecto` ➡️ PazYSalvoAppClient
+2. Creamos el directorio **Components**, allí alojar los diferentes componentes que vamos a trabajar:
+  * Side-Menu
+  * Navbar
+  * Login
+  * Facturas
+
+  2.1. Debo garantizar tener Node y el CLI de Angular instalado ➡️ `ng g c components/NombreDelComponente`
+
+3. Instalamos Angular Material
