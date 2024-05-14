@@ -6,12 +6,6 @@ import { LoginComponent } from './components/login/login.component';
 import { MatDialog } from '@angular/material/dialog';
 import { SharedService } from './shared.service';
 import { RouterModule, Routes, Router } from '@angular/router';
-import { FacturasComponent } from './components/facturas/facturas.component';
-
-const routes: Routes = [
-  { path: 'facturas', component: FacturasComponent }, // Route for Facturas view
-
-];
 
 @Component({
     selector: 'app-root',

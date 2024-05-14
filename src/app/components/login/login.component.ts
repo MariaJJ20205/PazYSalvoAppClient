@@ -42,7 +42,7 @@ export class LoginComponent {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`); // Pizza!
+      console.log(`Dialog result: ${result}`);
     });
   }
 

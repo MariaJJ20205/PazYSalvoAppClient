@@ -6,7 +6,6 @@ import { MatDividerModule } from '@angular/material/divider'
 import { SharedService } from '../../shared.service';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-side-menu',
   standalone: true,

@@ -9,7 +9,9 @@ export class SharedService {
   private isAdminSubject = new BehaviorSubject<boolean>(false);
   isAdmin$ = this.isAdminSubject.asObservable();
 
-  constructor() { }
+  constructor(
+
+  ) { }
 
   setAdmin(isAdmin: boolean): void {
     this.isAdminSubject.next(isAdmin);
