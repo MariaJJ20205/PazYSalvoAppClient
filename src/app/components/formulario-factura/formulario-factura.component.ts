@@ -24,6 +24,7 @@ export class FormularioFacturaComponent {
   constructor(
     private fb: FormBuilder,
   ) {
+    // Asigna los campo como obligatorios
     this.facturaForm = this.fb.group({
       saldo: ['', Validators.required],
       clienteId: ['', Validators.required],
@@ -38,15 +39,7 @@ export class FormularioFacturaComponent {
     console.log('datos del formulario: ', this.formData);
 
     if (this.facturaForm.valid) {
-      // this.facturaService.guardarFactura(this.facturaForm.value)
-      //   .subscribe(
-      //     () => {
-      //       console.log('Factura guardada exitosamente');
-      //     },
-      //     error => {
-      //       console.error('Error al guardar la factura:', error);
-      //     }
-      //   );
+
     } else {
       console.error('Formulario no válido');
     }

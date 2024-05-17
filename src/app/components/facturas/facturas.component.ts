@@ -2,7 +2,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatTableModule} from '@angular/material/table';
 import { FacturaService } from '../../services/factura.service';
-import { factura } from '../../models/factura.model';
+// import { factura } from '../../models/factura.model';
 import { Router } from '@angular/router';
 // import { HttpClientModule } from '@angular/common/http';
 
@@ -20,7 +20,6 @@ import { Router } from '@angular/router';
   imports: [
     MatTableModule,
     CommonModule,
-    // HttpClientModule
   ],
   templateUrl: './facturas.component.html',
   styleUrl: './facturas.component.css'
@@ -49,13 +48,6 @@ export class FacturasComponent {
 
     console.log("cargar factura");
 
-    this._facturaService.cargarFacturas().subscribe(
-      (data) => {
-        this.dataSource = data;
-      },
-      (error) => {
-        console.error('Error al cargar las facturas:', error);
-      }
-    );
+
   }
 }
