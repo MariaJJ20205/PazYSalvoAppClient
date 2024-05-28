@@ -44,10 +44,16 @@ export class FacturasComponent {
     console.log("evento neuva factura");
   }
 
-  cargarFacturas(): void {
+  
+    cargarFacturas(): void {
 
-    console.log("cargar factura");
-
-
+      this._facturaService.cargarFacturas().subscribe(
+        data=>{
+          this.dataSource = data;
+          console.log("Facturas de  de la base de datos", data)
+        }
+      );
+  
+    }
   }
-}
+

@@ -22,9 +22,9 @@ export class FacturaService {
   // LEER LOS ELEMENTOS DESDE BD
 
   cargarFacturas(): Observable<factura[]> {
-    return of([]);
+    return this.http.get<factura[]>(this.baseUrl);
+    
   }
-
   // NUEVO
 
   // EDITAR
